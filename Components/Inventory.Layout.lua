@@ -1248,12 +1248,11 @@ Bagshui:AddComponent(function()
 					local stackInfo = self.itemStacks[uniqueId]
 
 					if stackInfo then
-						if stackInfo.displayed then
+						if item ~= stackInfo.primaryItem then
 							-- We've already shown this item stack, so hide this duplicate.
 							hideItem = true
 						else
-							-- This is the first time we're seeing this item stack in this group.
-							stackInfo.displayed = true
+							-- This is the primary item (the representative unlocked one).
 
 							-- If there's more than one of these items, we need to fake the count.
 							if stackInfo.count > item.count then
@@ -1431,14 +1430,18 @@ Bagshui:AddComponent(function()
 					self.itemStacks[uniqueId] = {
 						count = 0,
 						slotCount = 0,
-						displayed = false,
-						-- We might want to keep a reference to a "representative" item to use for the button,
-						-- but we'll essentially use the first one we encounter in the AssignItemsToSlots loop.
+						primaryItem = item,
 					}
 				end
 
-				self.itemStacks[uniqueId].count = self.itemStacks[uniqueId].count + (item.count or 1)
-				self.itemStacks[uniqueId].slotCount = self.itemStacks[uniqueId].slotCount + 1
+				local stack = self.itemStacks[uniqueId]
+				stack.count = stack.count + (item.count or 1)
+				stack.slotCount = stack.slotCount + 1
+
+				-- Prefer unlocked items for the primary item (the one that will be displayed/interactable).
+				if stack.primaryItem.locked and not item.locked then
+					stack.primaryItem = item
+				end
 			end
 		end
 	end

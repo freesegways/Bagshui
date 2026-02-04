@@ -453,6 +453,10 @@ Bagshui:LoadComponent(function()
 		-- Store group ID so `UpdateItemButtonStockState()` can pull per-group settings.
 		buttonInfo.groupId = groupId
 
+		-- Store bag/slot numbers so the proxy used for Blizzard function interoperability works correctly.
+		buttonInfo.bagNum = item.bagNum
+		buttonInfo.slotNum = item.slotNum
+
 		-- Set main item texture.
 		_G.SetItemButtonTexture(button, item.texture)
 
