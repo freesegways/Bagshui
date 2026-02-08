@@ -226,7 +226,7 @@ Bagshui:LoadComponent(function()
         ["Slash_Help_Postscript"] = "For a list of subcommands, append Help to the command.",
 
         ["Slash_Help_ItemInfo"] = "/Bagshui !!Info!! Examples:" ..
-        BS_NEWLINE .. "   /Bagshui !!Info!! 13444" .. BS_NEWLINE .. "   /Bagshui !!Info!! item:13446:0:0:0",
+            BS_NEWLINE .. "   /Bagshui !!Info!! 13444" .. BS_NEWLINE .. "   /Bagshui !!Info!! item:13446:0:0:0",
 
         -- Key bindings (other than Inventory class names; those are handled in `Inventory:New()`).
         ["Binding_Resort"] = "Organize All",
@@ -297,21 +297,21 @@ Bagshui:LoadComponent(function()
         ["Toolbar_Show_TooltipText"] = "Toggle display of hidden items.",
         ["Toolbar_Search_TooltipTitle"] = "Search",
         ["Toolbar_Search_TooltipText"] = "Filter the contents of your %s." ..
-        BS_NEWLINE .. "Press Shift+Enter while searching to open the Catalog.",                                                               -- %s = Inventory type.
+            BS_NEWLINE .. "Press Shift+Enter while searching to open the Catalog.", -- %s = Inventory type.
         ["Toolbar_Resort_TooltipTitle"] = "Organize",
         ["Toolbar_Resort_TooltipText"] = "Categorize and sort.",
         ["Toolbar_Restack_TooltipTitle"] = "Restack",
         ["Toolbar_Restack_TooltipText"] = "Consolidate stackable items.",
         ["Toolbar_HighlightChanges_TooltipTitle"] = "Highlight Changes",
         ["Toolbar_HighlightChanges_TooltipText"] = "Toggle spotlighting of recently changed items." ..
-        BS_NEWLINE .. GRAY_FONT_COLOR_CODE .. "Alt-click to mark all items as unchanged.",
+            BS_NEWLINE .. GRAY_FONT_COLOR_CODE .. "Alt-click to mark all items as unchanged.",
         ["Toolbar_UnHighlightChanges_TooltipTitle"] = "Don't Highlight Changes",
 
         -- Action Tooltips.
         ["Tooltip_Inventory_PlaceBagInBagHint"] = "%s to move into bag instead of swapping.", -- "Shift-Click to lock/unlock slot highlighting"
         ["Tooltip_Inventory_ToggleBagSlotHighlightLockHint"] = "%s to %s slot highlighting.", -- "Alt-Click to lock/unlock slot highlighting"
-        ["Tooltip_Inventory_ToggleEmptySlotStacking"] = "%s to %s empty slots.",      -- "Click to stack/unstack empty slots"
-        ["Tooltip_Inventory_TradeShortcut"] = "%s to trade with %s.",                 -- "Alt-Click to trade with <Player Name>"
+        ["Tooltip_Inventory_ToggleEmptySlotStacking"] = "%s to %s empty slots.",              -- "Click to stack/unstack empty slots"
+        ["Tooltip_Inventory_TradeShortcut"] = "%s to trade with %s.",                         -- "Alt-Click to trade with <Player Name>"
 
         -- Edit Mode.
         ["EditMode"] = "Edit Mode",
@@ -414,11 +414,11 @@ Bagshui:LoadComponent(function()
         ["Menu_Group_Remove_Category_TooltipText"] =
         "Remove a category that is currently assigned to this group.!!Info_NoDelete!!",
         ["Menu_Group_Edit_Category_TooltipText"] = "Edit a category that is currently assigned to this group.",
-        ["Menu_Group_DefaultColor_TooltipTitle"] = "Use Default Group %s Color",                                         -- %s = Background/Border
-        ["Menu_Group_DefaultColor_TooltipText"] = "Apply the group %s color defined in Settings.",                       -- %s = Background/Border
+        ["Menu_Group_DefaultColor_TooltipTitle"] = "Use Default Group %s Color",                   -- %s = Background/Border
+        ["Menu_Group_DefaultColor_TooltipText"] = "Apply the group %s color defined in Settings.", -- %s = Background/Border
         ["Menu_Group_DefaultSortOrder_TooltipTitle"] = "Use Default Sort Order",
         ["Menu_Group_DefaultSortOrder_TooltipText"] = "Apply the current Structure's default sort order:" ..
-        BS_NEWLINE .. "%s",                                                                                              -- %s = <Name of default sort order>
+            BS_NEWLINE .. "%s", -- %s = <Name of default sort order>
         ["Menu_Group_HideGroup"] = "Hide Group",
         ["Menu_Group_HideGroup_TooltipText"] = "Don't display this group unless Show Hidden is toggled on.",
         ["Menu_Group_HideStockBadge"] = "Hide Stock Badge",
@@ -426,7 +426,7 @@ Bagshui:LoadComponent(function()
         "Prevent the display of Stock Change Badges (new/increased/decreased) for this group.",
         ["Menu_Group_Settings_TooltipTitle"] = "Group Settings",
         ["Menu_Group_Settings_TooltipText"] = "Manage group-specific options, including background and border color.",
-        ["Menu_Group_Color_TooltipTitle"] = "Group %s Color",    -- %s = Background/Border
+        ["Menu_Group_Color_TooltipTitle"] = "Group %s Color",            -- %s = Background/Border
         ["Menu_Group_Color_TooltipText"] = "Set the %s for this group.", -- %s = background/border
         ["Menu_Group_SortOrder_TooltipTitle"] = "Group Sort Order",
         ["Menu_Group_SortOrder_TooltipText"] = "Change how items are sorted within this group.",
@@ -524,10 +524,10 @@ Bagshui:LoadComponent(function()
         ["TooltipIdentifier_MountAQ40"] = [[Use: Emits a high frequency sound]],
         ["TooltipIdentifier_Mount_TurtleWoW"] = [[Use: Adds a mount to the player's mount collection]], -- Turtle has a completely different tooltip for mounts.
         ["TooltipIdentifier_Openable"] = [[<Right Click to Open>]],
-        ["TooltipIdentifier_PotionHealth"] = [[/Restores %d+ to %d+ health\./]],                -- Wrap in slashes to activate pattern matching.
-        ["TooltipIdentifier_PotionMana"] = [[/Restores %d+ to %d+ mana\./]],                    -- Wrap in slashes to activate pattern matching.
+        ["TooltipIdentifier_PotionHealth"] = [[/Restores %d+ to %d+ health\./]],                        -- Wrap in slashes to activate pattern matching.
+        ["TooltipIdentifier_PotionMana"] = [[/Restores %d+ to %d+ mana\./]],                            -- Wrap in slashes to activate pattern matching.
         ["TooltipIdentifier_QuestItem"] = [[Quest Item]],
-        ["TooltipIdentifier_Recipe"] = [[Use: Teaches you how to]],                             -- Needed because Turtle WoW has some of their custom recipes categorized as Consumables.
+        ["TooltipIdentifier_Recipe"] = [[Use: Teaches you how to]],                                     -- Needed because Turtle WoW has some of their custom recipes categorized as Consumables.
         ["TooltipIdentifier_Toy_TurtleWoW"] = [[Use: Add a toy to the player's toy collection]],
 
         -- Tooltip parsing -- extracting data from tooltips.
@@ -622,7 +622,7 @@ Bagshui:LoadComponent(function()
         ["ObjectList_ActionNotAllowed"] = "%s is not allowed for %s.", -- "<Creation/Editing/Deletion> is not allowed for <objectNamePlural>"
         ["ObjectList_ShowObjectUses"] = "Show %s Uses",
         ["ObjectList_ShowProfileUses"] = "Show Profile Uses",
-        ["ObjectList_ImportSuccessful"] = "Imported %s '%s'.",                                     -- "Imported <objectType> '<objectName>'"
+        ["ObjectList_ImportSuccessful"] = "Imported %s '%s'.",                                             -- "Imported <objectType> '<objectName>'"
         ["ObjectList_ImportReusingExisting"] = "Skipping import of %s '%s' since it's identical to '%s'.", -- "Skipping import of <objectType> '<objectName>' since it's identical to '<existingObjectName'."
 
         -- Default column names.
@@ -635,18 +635,18 @@ Bagshui:LoadComponent(function()
 
         -- The third %s after the ? is used to insert additional text if the ObjectManager's deletePromptExtraInfo property is set.
         ["ObjectManager_DeletePrompt"] = "Delete the following %s?%s%s!!Warning_NoUndo!!", -- "Delete category '<category name>'?"
-        ["ObjectManager_DeleteForPrompt"] = "Delete %s for '%s'?%s!!Warning_NoUndo!!", -- "Delete character data for '<character name>'?"
+        ["ObjectManager_DeleteForPrompt"] = "Delete %s for '%s'?%s!!Warning_NoUndo!!",     -- "Delete character data for '<character name>'?"
 
-        ["ObjectEditor_UnsavedPrompt"] = "Save changes to %s '%s' before closing?", -- "Save changes to <objectType> '<objectName>' before closing?"
+        ["ObjectEditor_UnsavedPrompt"] = "Save changes to %s '%s' before closing?",        -- "Save changes to <objectType> '<objectName>' before closing?"
         ["ObjectEditor_RequiredField"] = "%s is required",
 
         -- Object editor prompt when adding a new item to an item list.
         ["ItemList_NewPrompt"] = "Identifier(s) of item(s) to add:" ..
-        BS_NEWLINE ..
-        GRAY_FONT_COLOR_CODE ..
-        "Can be IDs, ItemLinks/ItemStrings, or database URLs." ..
-        BS_NEWLINE ..
-        "Separate multiple by any combination of space, tab, comma, semicolon, or newline." .. FONT_COLOR_CODE_CLOSE,
+            BS_NEWLINE ..
+            GRAY_FONT_COLOR_CODE ..
+            "Can be IDs, ItemLinks/ItemStrings, or database URLs." ..
+            BS_NEWLINE ..
+            "Separate multiple by any combination of space, tab, comma, semicolon, or newline." .. FONT_COLOR_CODE_CLOSE,
         ["ItemList_CopyPrompt"] = "Item IDs:",
 
 
@@ -655,14 +655,14 @@ Bagshui:LoadComponent(function()
 
         -- Category Manager/Editor.
         ["CategoryManager"] = "Bagshui Category Manager", -- Window title.
-        ["CategoryEditor"] = "Edit Category",     -- Window title.
+        ["CategoryEditor"] = "Edit Category",             -- Window title.
         ["CategoryEditor_Field_name"] = "!!Name!!",
         ["CategoryEditor_Field_nameSort"] = "Name (Sort By)",
         ["CategoryEditor_Field_nameSort_TooltipText"] =
         "Override the Category Name used in Sort Orders without changing how its name is displayed.",
         ["CategoryEditor_Field_sequence"] = "Sequence",
         ["CategoryEditor_Field_sequence_TooltipText"] = "Control the order in which categories are evaluated." ..
-        BS_NEWLINE .. "0 = first, 100 = last",
+            BS_NEWLINE .. "0 = first, 100 = last",
         ["CategoryEditor_Field_class"] = "Class",
         ["CategoryEditor_Field_rule"] = "Rule",
         ["CategoryEditor_Field_rule_TooltipText"] =
@@ -689,7 +689,7 @@ Bagshui:LoadComponent(function()
 
         -- Sort Order Editor.
         ["SortOrderManager"] = "Bagshui Sort Order Manager", -- Window title.
-        ["SortOrderEditor"] = "Edit Sort Order",     -- Window title.
+        ["SortOrderEditor"] = "Edit Sort Order",             -- Window title.
         ["SortOrderEditor_Field_name"] = "!!Name!!",
         ["SortOrderEditor_Field_fields"] = "Fields",
         -- Button tooltips.
@@ -699,13 +699,13 @@ Bagshui:LoadComponent(function()
 
 
         -- Profile Manager/Editor.
-        ["ProfileManager"] = "Bagshui Profile Manager",                                                                     -- Window title.
-        ["ProfileManager_ReplaceTooltipTitle"] = "Replace %s",                                                              -- "Replace Design"
-        ["ProfileManager_ReplaceTooltipText"] = "Copy the %s configuration from the '%s' profile to '%s'.",                 -- "Copy the Design configuration from the 'Source' profile to 'Target'."
+        ["ProfileManager"] = "Bagshui Profile Manager",                                                     -- Window title.
+        ["ProfileManager_ReplaceTooltipTitle"] = "Replace %s",                                              -- "Replace Design"
+        ["ProfileManager_ReplaceTooltipText"] = "Copy the %s configuration from the '%s' profile to '%s'.", -- "Copy the Design configuration from the 'Source' profile to 'Target'."
         ["ProfileManager_ReplacePrompt"] =
-        "Replace the %s configuration of the '%s' profile with that of '%s'?!!Warning_NoUndo!!",                            -- "Replace the Design configuration of the 'Target' profile with that of 'Source'?"
+        "Replace the %s configuration of the '%s' profile with that of '%s'?!!Warning_NoUndo!!",            -- "Replace the Design configuration of the 'Target' profile with that of 'Source'?"
 
-        ["ProfileEditor"] = "Edit Profile",                                                                                 -- Window title.
+        ["ProfileEditor"] = "Edit Profile",                                                                 -- Window title.
         ["ProfileEditor_Field_name"] = "!!Name!!",
         ["ProfileEditor_FooterText"] = "Profiles are edited via the Settings menu and Edit Mode.",
 
@@ -735,9 +735,9 @@ Bagshui:LoadComponent(function()
 
         -- Shared values for rule function !!placeholders!! that will be replaced when the localization is loaded.
         ["RuleFunction_LuaStringPatternsSupported"] = BS_NEWLINE ..
-        GRAY_FONT_COLOR_CODE .. 'Use Lua string patterns by "/wrapping with slashes/".' .. FONT_COLOR_CODE_CLOSE,
+            GRAY_FONT_COLOR_CODE .. 'Use Lua string patterns by "/wrapping with slashes/".' .. FONT_COLOR_CODE_CLOSE,
         ["RuleFunction_PT_CaseSensitiveParameters"] = BS_NEWLINE ..
-        GRAY_FONT_COLOR_CODE .. "Set names are case-sensitive." .. FONT_COLOR_CODE_CLOSE,
+            GRAY_FONT_COLOR_CODE .. "Set names are case-sensitive." .. FONT_COLOR_CODE_CLOSE,
 
         -- DO NOT Localize rule function names (`ActiveQuest()`, `BindsOnEquip()`, etc. as they are NOT localized in the rule environment).
 
@@ -747,7 +747,7 @@ Bagshui:LoadComponent(function()
 
         ["RuleFunction_Bag_GenericDescription"] = "Check if the item is in the specified bag number",
         ["RuleFunction_Bag_ExampleDescription"] =
-        "Check if the item is in the specified bag number (%d is container #%d in %s)",                                   -- "(0 is container #1 in Bags)"
+        "Check if the item is in the specified bag number (%d is container #%d in %s)", -- "(0 is container #1 in Bags)"
         ["RuleFunction_Bag_ExampleExtra1"] = 'Bag(num1, num2, numN)',
         ["RuleFunction_Bag_ExampleDescriptionExtra1"] = "Check if the item is in any of the specified bag numbers.",
 
@@ -755,17 +755,18 @@ Bagshui:LoadComponent(function()
         ["RuleFunction_BagType_ExampleDescription"] = "Check if the item is in a bag of the type '%s'.",
         ["RuleFunction_BagType_ExampleExtra1"] = 'BagType(ProfessionBag)',
         ["RuleFunction_BagType_ExampleDescriptionExtra1"] =
-        "Check if the item is in a bag that is specific to one of the current character's professions" ..
-        GRAY_FONT_COLOR_CODE ..
-        BS_NEWLINE ..
-        "ProfessionBag is the special trigger for this functionality and must NOT be in quotes." .. FONT_COLOR_CODE_CLOSE,
+            "Check if the item is in a bag that is specific to one of the current character's professions" ..
+            GRAY_FONT_COLOR_CODE ..
+            BS_NEWLINE ..
+            "ProfessionBag is the special trigger for this functionality and must NOT be in quotes." ..
+            FONT_COLOR_CODE_CLOSE,
         ["RuleFunction_BagType_ExampleExtra2"] = 'BagType(AllProfessionBags)',
         ["RuleFunction_BagType_ExampleDescriptionExtra2"] =
-        "Check if the item is in a bag that belongs to any profession-specific container." ..
-        GRAY_FONT_COLOR_CODE ..
-        BS_NEWLINE ..
-        "AllProfessionBags is the special trigger for this functionality and must NOT be in quotes." ..
-        FONT_COLOR_CODE_CLOSE,
+            "Check if the item is in a bag that belongs to any profession-specific container." ..
+            GRAY_FONT_COLOR_CODE ..
+            BS_NEWLINE ..
+            "AllProfessionBags is the special trigger for this functionality and must NOT be in quotes." ..
+            FONT_COLOR_CODE_CLOSE,
         ["RuleFunction_BagType_ExampleExtra3"] = 'BagType("type1", "type2", "typeN")',
         ["RuleFunction_BagType_ExampleDescriptionExtra3"] =
         'Check if the item is in a bag of any of the specified types.',
@@ -805,11 +806,11 @@ Bagshui:LoadComponent(function()
 
         ["RuleFunction_Equipped_Example1"] = 'Equipped()',
         ["RuleFunction_Equipped_ExampleDescription1"] =
-        "Check if the item has been equipped (useful to match gear that is not soulbound)." ..
-        GRAY_FONT_COLOR_CODE ..
-        BS_NEWLINE ..
-        "You can also pass the same parameters as EquipLocation() to only match a specific inventory slot." ..
-        FONT_COLOR_CODE_CLOSE,
+            "Check if the item has been equipped (useful to match gear that is not soulbound)." ..
+            GRAY_FONT_COLOR_CODE ..
+            BS_NEWLINE ..
+            "You can also pass the same parameters as EquipLocation() to only match a specific inventory slot." ..
+            FONT_COLOR_CODE_CLOSE,
 
         ["RuleFunction_Id_GenericDescription"] = 'Check if the item ID is an exact match.',
         ["RuleFunction_Id_Example1"] = 'Id(number)',
@@ -821,13 +822,13 @@ Bagshui:LoadComponent(function()
         "Check if the item string matches (use to match specific enchant or suffix IDs).",
         ["RuleFunction_ItemString_Example1"] = 'ItemString(number)',
         ["RuleFunction_ItemString_ExampleDescription1"] = RED_FONT_COLOR_CODE ..
-        "Use Id(itemId) instead." ..
-        FONT_COLOR_CODE_CLOSE .. BS_NEWLINE .. "Check if the item string begins with 'item:<itemId>:'",
+            "Use Id(itemId) instead." ..
+            FONT_COLOR_CODE_CLOSE .. BS_NEWLINE .. "Check if the item string begins with 'item:<itemId>:'",
         ["RuleFunction_ItemString_Example2"] = 'ItemString("item:number")',
         ["RuleFunction_ItemString_ExampleDescription2"] = RED_FONT_COLOR_CODE ..
-        "Use Id(itemId) instead." ..
-        FONT_COLOR_CODE_CLOSE ..
-        BS_NEWLINE .. "Check if the item string begins with 'item:<itemId>:' (the item: prefix is optional).",
+            "Use Id(itemId) instead." ..
+            FONT_COLOR_CODE_CLOSE ..
+            BS_NEWLINE .. "Check if the item string begins with 'item:<itemId>:' (the item: prefix is optional).",
         ["RuleFunction_ItemString_Example3"] = 'ItemString("item:number:number")',
         ["RuleFunction_ItemString_ExampleDescription3"] =
         "Check if the item string begins with 'item:<itemId>:<enchantId>:' (the item: prefix is optional).",
@@ -850,13 +851,13 @@ Bagshui:LoadComponent(function()
         ["RuleFunction_LootMethod_Example1"] = 'LootMethod("FreeForAll")', -- DO NOT LOCALIZE THE PARAMETER.
         ["RuleFunction_LootMethod_ExampleDescription1"] =
         "Check if loot method is Free For All (this is the default loot method).",
-        ["RuleFunction_LootMethod_Example2"] = 'LootMethod("RoundRobin")', -- DO NOT LOCALIZE THE PARAMETER.
+        ["RuleFunction_LootMethod_Example2"] = 'LootMethod("RoundRobin")',      -- DO NOT LOCALIZE THE PARAMETER.
         ["RuleFunction_LootMethod_ExampleDescription2"] = "Check if loot method is Round Robin.",
-        ["RuleFunction_LootMethod_Example3"] = 'LootMethod("Master")',  -- DO NOT LOCALIZE THE PARAMETER.
+        ["RuleFunction_LootMethod_Example3"] = 'LootMethod("Master")',          -- DO NOT LOCALIZE THE PARAMETER.
         ["RuleFunction_LootMethod_ExampleDescription3"] = "Check if loot method is Master.",
         ["RuleFunction_LootMethod_Example4"] = 'LootMethod("NeedBeforeGreed")', -- DO NOT LOCALIZE THE PARAMETER.
         ["RuleFunction_LootMethod_ExampleDescription4"] = "Check if loot method is Need Before Greed.",
-        ["RuleFunction_LootMethod_Example5"] = 'LootMethod("PersonalLoot")', -- DO NOT LOCALIZE THE PARAMETER.
+        ["RuleFunction_LootMethod_Example5"] = 'LootMethod("PersonalLoot")',    -- DO NOT LOCALIZE THE PARAMETER.
         ["RuleFunction_LootMethod_ExampleDescription5"] = "Check if loot method is Personal Loot.",
         ["RuleFunction_LootMethod_Example6"] = 'LootMethod("method1", "method2", "methodN")',
         ["RuleFunction_LootMethod_ExampleDescription6"] = "Check if current loot method is any of the provided values.",
@@ -868,19 +869,19 @@ Bagshui:LoadComponent(function()
         "Parameters are Category IDs (NOT NAMES) which can be found the bottom of the Category Editor.",
         ["RuleFunction_MatchCategory_Example1"] = 'MatchCategory("KeyAndKeyLike")', -- DO NOT LOCALIZE THE PARAMETER.
         ["RuleFunction_MatchCategory_ExampleDescription1"] = "Check if the item matches the built-in Keys Category." ..
-        BS_NEWLINE ..
-        LIGHTYELLOW_FONT_COLOR_CODE ..
-        "IDs for built-in Categories are strings that may not match their names." .. FONT_COLOR_CODE_CLOSE,
-        ["RuleFunction_MatchCategory_Example2"] = 'MatchCategory(5)',       -- DO NOT LOCALIZE THE PARAMETER.
+            BS_NEWLINE ..
+            LIGHTYELLOW_FONT_COLOR_CODE ..
+            "IDs for built-in Categories are strings that may not match their names." .. FONT_COLOR_CODE_CLOSE,
+        ["RuleFunction_MatchCategory_Example2"] = 'MatchCategory(5)', -- DO NOT LOCALIZE THE PARAMETER.
         ["RuleFunction_MatchCategory_ExampleDescription2"] = "Check if the item matches custom Category 5." ..
-        BS_NEWLINE .. LIGHTYELLOW_FONT_COLOR_CODE .. "Custom Categories have numeric IDs.",
-        ["RuleFunction_MatchCategory_Example3"] = 'not MatchCategory(5)',   -- DO NOT LOCALIZE THE PARAMETER.
+            BS_NEWLINE .. LIGHTYELLOW_FONT_COLOR_CODE .. "Custom Categories have numeric IDs.",
+        ["RuleFunction_MatchCategory_Example3"] = 'not MatchCategory(5)',         -- DO NOT LOCALIZE THE PARAMETER.
         ["RuleFunction_MatchCategory_ExampleDescription3"] = "Check if the item does NOT match custom Category 5.",
         ["RuleFunction_MatchCategory_Example4"] = 'MatchCategory(ID1, ID2, IDN)', -- DO NOT LOCALIZE THE PARAMETER.
         ["RuleFunction_MatchCategory_ExampleDescription4"] = "Check if the item matches any of the specified Categories." ..
-        BS_NEWLINE ..
-        LIGHTYELLOW_FONT_COLOR_CODE ..
-        'Remember that built-in Categories use strings that must be "quoted" and custom Categories use numbers.',
+            BS_NEWLINE ..
+            LIGHTYELLOW_FONT_COLOR_CODE ..
+            'Remember that built-in Categories use strings that must be "quoted" and custom Categories use numbers.',
 
         ["RuleFunction_MinLevel_GenericDescription"] = "Check if the item is usable based on the specified level.",
         ["RuleFunction_MinLevel_Example1"] = 'MinLevel(level)',
@@ -935,7 +936,7 @@ Bagshui:LoadComponent(function()
         ["RuleFunction_PlayerInGroup_ExampleDescription1"] = "Check if you are in any group (party or raid).",
         ["RuleFunction_PlayerInGroup_Example2"] = 'PlayerInGroup(Party)', -- DO NOT LOCALIZE THE PARAMETER.
         ["RuleFunction_PlayerInGroup_ExampleDescription2"] = "Check if you are in a party group.",
-        ["RuleFunction_PlayerInGroup_Example3"] = 'PlayerInGroup(Raid)', -- DO NOT LOCALIZE THE PARAMETER.
+        ["RuleFunction_PlayerInGroup_Example3"] = 'PlayerInGroup(Raid)',  -- DO NOT LOCALIZE THE PARAMETER.
         ["RuleFunction_PlayerInGroup_ExampleDescription3"] = "Check if you are in a raid group.",
 
         ["RuleFunction_ProfessionCraft_GenericDescription"] =
@@ -1000,7 +1001,7 @@ Bagshui:LoadComponent(function()
 
         ["RuleFunction_Subzone_GenericDescription"] = "Check the current subzone (locale-specific).",
         ["RuleFunction_Subzone_Note"] = "To view: /Bagshui !!Info!! Location",
-        ["RuleFunction_Subzone_Example1"] = 'Subzone("Spirit Rise")',     -- DO localize the parameter.
+        ["RuleFunction_Subzone_Example1"] = 'Subzone("Spirit Rise")',             -- DO localize the parameter.
         ["RuleFunction_Subzone_ExampleDescription1"] = "Check if you are in Spirit Rise.",
         ["RuleFunction_Subzone_Example2"] = 'Subzone("zone1", "zone2", "zoneN")', -- DO localize the parameters.
         ["RuleFunction_Subzone_ExampleDescription2"] = "Check if you are in any of the specified subzones.",
@@ -1038,7 +1039,7 @@ Bagshui:LoadComponent(function()
 
         ["RuleFunction_Zone_GenericDescription"] = "Check the current zone (locale-specific).",
         ["RuleFunction_Zone_Note"] = "To view: /Bagshui !!Info!! Location",
-        ["RuleFunction_Zone_Example1"] = 'Zone("Thunder Bluff")',   -- DO localize the parameter.
+        ["RuleFunction_Zone_Example1"] = 'Zone("Thunder Bluff")',           -- DO localize the parameter.
         ["RuleFunction_Zone_ExampleDescription1"] = "Check if you are in Thunder Bluff.",
         ["RuleFunction_Zone_Example2"] = 'Zone("zone1", "zone2", "zoneN")', -- DO localize the parameters.
         ["RuleFunction_Zone_ExampleDescription2"] = "Check if you are in any of the specified zones.",
@@ -1058,7 +1059,7 @@ Bagshui:LoadComponent(function()
         ["Error_BagSwap_EmptyOldFailed"] = "Failed to empty the old bag.",
         ["Error_BagSwap_EmptyOldInsufficientSpace"] = "Not enough free slots to empty the old bag.",
         ["Error_BagSwap_EquipNewFailed"] = "Failed to equip the new bag.",
-        ["Error_CategoryEvaluation"] = "%s: %s",             -- "<Category Name>: <Error Message>"
+        ["Error_CategoryEvaluation"] = "%s: %s",                     -- "<Category Name>: <Error Message>"
         ["Error_DuplicateName"] = "There is already a %s named %s.", -- "There is already a <Object Type> named <Name>."
         ["Error_GroupNotFound"] = "Group ID %s not found.",
         ["Error_HearthstoneNotFound"] = "Hearthstone not found.",
@@ -1071,7 +1072,7 @@ Bagshui:LoadComponent(function()
         ["Error_Suffix_Retrying"] = "%s; retrying…", -- Appended to the end of an error message when an action has failed but is being attempted again.
 
         ["Info_NoDelete"] = BS_NEWLINE ..
-        GRAY_FONT_COLOR_CODE .. "Does NOT delete the category." .. FONT_COLOR_CODE_CLOSE,
+            GRAY_FONT_COLOR_CODE .. "Does NOT delete the category." .. FONT_COLOR_CODE_CLOSE,
 
         ["Warning_NoUndo"] = BS_NEWLINE .. RED_FONT_COLOR_CODE .. "This cannot be undone!" .. FONT_COLOR_CODE_CLOSE,
         ["Warning_RuleFunctionOverwrite"] = "Overwriting existing rule environment function %s()",
@@ -1211,15 +1212,15 @@ Bagshui:LoadComponent(function()
 
         ["disableAutomaticResort"] = "Manual Organization",
         ["disableAutomaticResort_TooltipText"] =
-        "Don't categorize and sort items when the inventory window is closed and reopened." ..
-        BS_NEWLINE ..
-        LIGHTYELLOW_FONT_COLOR_CODE ..
-        "This is NOT the same as setting the default sort order to Manual." .. FONT_COLOR_CODE_CLOSE,
+            "Don't categorize and sort items when the inventory window is closed and reopened." ..
+            BS_NEWLINE ..
+            LIGHTYELLOW_FONT_COLOR_CODE ..
+            "This is NOT the same as setting the default sort order to Manual." .. FONT_COLOR_CODE_CLOSE,
 
         ["windowDoubleClickActions"] = "Double-Click",
         ["windowDoubleClickActions_TooltipText"] =
-        "Double-click a blank part of the inventory window to show/hide all toolbars." ..
-        BS_NEWLINE .. "Alt+double-click to toggle position lock.",
+            "Double-click a blank part of the inventory window to show/hide all toolbars." ..
+            BS_NEWLINE .. "Alt+double-click to toggle position lock.",
 
         ["emptySlotBackgroundImage"] = "Image",
         ["emptySlotBackgroundImage_TooltipTitle"] = "Empty Slot Background Image",
@@ -1333,7 +1334,7 @@ Bagshui:LoadComponent(function()
 
         ["sellProtectionQualityThreshold"] = "!!ItemPropFriendly_quality!! Threshold",
         ["sellProtectionQualityThreshold_TooltipText"] = "Require confirmation before selling.",
-        ["sellProtectionQualityThreshold_Choice_TooltipTitle"] = "Protect %s Items",                               -- %s = Quality (ex. Rare, Epic).
+        ["sellProtectionQualityThreshold_Choice_TooltipTitle"] = "Protect %s Items",                                       -- %s = Quality (ex. Rare, Epic).
         ["sellProtectionQualityThreshold_Choice_TooltipText"] = "Require confirmation before selling %s items or higher.", -- %s = Quality (ex. Rare, Epic).
 
         ["sellProtectionSoulbound"] = "!!ItemPropFriendly_soulbound!!",
@@ -1346,22 +1347,22 @@ Bagshui:LoadComponent(function()
         ["showClam"] = "Clam",
         ["showClam_TooltipTitle"] = "Clam (Open Container) Button",
         ["showClam_TooltipText"] = "Show the Clam button to enable rapid container opening." ..
-        BS_NEWLINE .. LIGHTYELLOW_FONT_COLOR_CODE .. "Applies to Bags only." .. FONT_COLOR_CODE_CLOSE,
+            BS_NEWLINE .. LIGHTYELLOW_FONT_COLOR_CODE .. "Applies to Bags only." .. FONT_COLOR_CODE_CLOSE,
 
         ["showDisenchant"] = "Disenchant",
         ["showDisenchant_TooltipTitle"] = "Disenchant Button",
         ["showDisenchant_TooltipText"] = "Show the Disenchant button." ..
-        BS_NEWLINE ..
-        LIGHTYELLOW_FONT_COLOR_CODE ..
-        "Applies to characters who have Enchanting and Bags only." .. FONT_COLOR_CODE_CLOSE,
+            BS_NEWLINE ..
+            LIGHTYELLOW_FONT_COLOR_CODE ..
+            "Applies to characters who have Enchanting and Bags only." .. FONT_COLOR_CODE_CLOSE,
 
         ["showFooter"] = "Bottom Toolbar",
         ["showFooter_TooltipTitle"] = "Bottom Toolbar",
         ["showFooter_TooltipText"] = "Show the bottom toolbar." ..
-        BS_NEWLINE ..
-        LIGHTYELLOW_FONT_COLOR_CODE ..
-        "Hiding this will conceal everything below the items, including the Bag Bar and money display." ..
-        FONT_COLOR_CODE_CLOSE,
+            BS_NEWLINE ..
+            LIGHTYELLOW_FONT_COLOR_CODE ..
+            "Hiding this will conceal everything below the items, including the Bag Bar and money display." ..
+            FONT_COLOR_CODE_CLOSE,
 
         ["showGroupLabels"] = "Labels",
         ["showGroupLabels_TooltipTitle"] = "Group Labels",
@@ -1370,15 +1371,15 @@ Bagshui:LoadComponent(function()
         ["showHeader"] = "Top Toolbar",
         ["showHeader_TooltipTitle"] = "Top Toolbar",
         ["showHeader_TooltipText"] = "Show the top toolbar." ..
-        BS_NEWLINE ..
-        LIGHTYELLOW_FONT_COLOR_CODE ..
-        "Hiding this will conceal everything above the items, including the Close button, so you'll need to close via key bindings, action bar buttons, or macros." ..
-        FONT_COLOR_CODE_CLOSE,
+            BS_NEWLINE ..
+            LIGHTYELLOW_FONT_COLOR_CODE ..
+            "Hiding this will conceal everything above the items, including the Close button, so you'll need to close via key bindings, action bar buttons, or macros." ..
+            FONT_COLOR_CODE_CLOSE,
 
         ["showHearthstone"] = "Hearthstone",
         ["showHearthstone_TooltipTitle"] = "Hearthstone Button",
         ["showHearthstone_TooltipText"] = "Show the Hearthstone button." ..
-        BS_NEWLINE .. LIGHTYELLOW_FONT_COLOR_CODE .. "Applies to Bags only." .. FONT_COLOR_CODE_CLOSE,
+            BS_NEWLINE .. LIGHTYELLOW_FONT_COLOR_CODE .. "Applies to Bags only." .. FONT_COLOR_CODE_CLOSE,
 
         ["showInfoTooltipsWithoutAlt"] = "Show Without Alt",
         ["showInfoTooltipsWithoutAlt_TooltipText"] =
@@ -1392,15 +1393,15 @@ Bagshui:LoadComponent(function()
         ["showPickLock"] = "Pick Lock",
         ["showPickLock_TooltipTitle"] = "Pick Lock Button",
         ["showPickLock_TooltipText"] = "Show the Pick Lock button." ..
-        BS_NEWLINE .. LIGHTYELLOW_FONT_COLOR_CODE .. "Applies to Rogues and Bags only." .. FONT_COLOR_CODE_CLOSE,
+            BS_NEWLINE .. LIGHTYELLOW_FONT_COLOR_CODE .. "Applies to Rogues and Bags only." .. FONT_COLOR_CODE_CLOSE,
 
         ["stackEmptySlots"] = "Stack Empty",
         ["stackEmptySlots_TooltipTitle"] = "Stack Empty Slots",
         ["stackEmptySlots_TooltipText"] =
         "Combine empty slots into single stacks that can be expanded on click (profession bags will stack separately).",
 
-        ["stackItems"] = "Stack Items",
-        ["stackItems_TooltipTitle"] = "Stack Items",
+        ["stackItems"] = "Stack Stacks",
+        ["stackItems_TooltipTitle"] = "Stack Stacks",
         ["stackItems_TooltipText"] = "Combine identical items into single stacks.",
 
         ["toolbarButtonColor"] = "Icons",
